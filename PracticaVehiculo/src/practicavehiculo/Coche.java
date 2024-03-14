@@ -1,0 +1,53 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package practicavehiculo;
+
+/**
+ *
+ * @author Medac
+ */
+public class Coche extends Vehiculo{
+
+    public Coche() {
+        super();
+        velocidad=2;
+        nombre="Coche";
+        vida=2;
+    }
+    @Override
+    public void info(){
+        System.out.println("Este vehículo es equilibrado.");
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(int velocidad) {
+        this.velocidad = velocidad;
+    }
+
+    public int getVida() {
+        return vida;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+    
+    @Override
+    public String toString() {
+        return "Coche: " + " Velocidad: "+velocidad+" Salud: "+vida;
+    }
+    
+}
